@@ -1,0 +1,13 @@
+[1] http://www.coding2learn.org/blog/2013/07/29/kids-cant-use-computers/
+
+Response:
+
+[2] https://www.fischco.org/technica/2013/cant-use-computers/
+
+> My car is broken. I call in an automotive expert to fix it. They do. I’m happy.
+> I am hungry. I call upon an agricultural expert to grow food. They do. I’m happy.
+> We can’t even be pretty good at everything. We have to decide what we will be good at, and what we will depend upon others to do for us
+
+The issue is not that we can't do these things.  It's that people lack the mental framework to reason about computers, in a way in which they do regarding other aspects of life.
+
+http://coding2learn.org/blog/2012/04/25/how-the-grinch-stole-ict/

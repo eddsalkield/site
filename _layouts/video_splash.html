@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  height: 100%;
+  font-Family: Arial;
+}
+.video-contain {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 78.1vh;
+  overflow: hidden;
+}
+.video-contain video {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left:50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.page__footer {
+  margin-top: 0;
+}
+</style>
+
+{% if page.header.video %}
+  <div class="video-contain">
+  <video autoplay muted loop playsinline preload="yes" id="myVideo">
+    <source src="{{ page.header.video }}" type="video/mp4">
+  </video>
+  </div>
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>
