@@ -35,11 +35,10 @@ scope:
 tasting_notes:
     "eyes - dry leaf": "Moss green rolled, hook-shaped leaves."
     "nose - dry leaf": "Honey, cream, fresh kale."
-    "nose wet leaf": "Laquered mahogany, spiced poached pear, saffron, menthol."
+    "nose - wet leaf": "Laquered mahogany, spiced poached pear, saffron, menthol."
     "eyes - liquor": "Pale gold."
     "mouth - texture": "Medium thickness, and brothy."
     "mouth - taste": "Rich seeds, buttered asparagus, a hint of mint."
-    "nose - empty cup": ""
     "mouth - finish": "Oily, almost of salmon."
     "eyes - wet leaf": "Evenly coloured, connected buds and leaves."
 ---
@@ -56,6 +55,6 @@ The aroma was impressive, evolving throughout the brewing process.  The initial 
 
 {% include gallery id="gallery2" layout="half" caption="Brewing in the gong fu style." %}
 
-So, overall a wonderful tea that's sadly running rather low in the collection.  Although the [website linked on the box](http://www.yangyancha.com) is no longer in operation, this tea is still hopefully available through other means.
+So, overall a wonderful tea that's sadly running rather low in the collection.  Although the [website linked on the box](https://web.archive.org/web/20110209034704/http://www.yangyancha.com/) is no longer in operation, this tea is still hopefully available through other means.
 
 [^1]: http://taizhou.chinadaily.com.cn/2020-04/01/c_468702.htm

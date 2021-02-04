@@ -9,8 +9,8 @@ I'm Edd, and welcome to my portion of the internet.
 I have a diverse set of interests spanning free software, tea appreciation, hardware hacking, and electronic music production.  My beliefs include that [Hanlon's razor](https://en.wikipedia.org/wiki/Hanlon%27s_razor) is only used by the malicious, that self-referential comedy is the best kind[^1], and that it's hard to stop using the [slippery slope argument](https://en.wikipedia.org/wiki/Slippery_slope) once you begin.  More seriously, I hold a firm conviction that Jesus is the Christ; fundamentally, I'm passionate that more people should come to know Him as Lord.
 
 <figure class="half">
-    <a href="/assets/images/dj2.jpg">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/me/dj.jpg" alt="">
+    <a href="/assets/images/me/dj.jpg">
+        <img src="/assets/images/me/dj.jpg" alt="">
     </a>
     <figcaption>Preparing to DJ for a live music event in Switzerland.</figcaption>
 </figure>
