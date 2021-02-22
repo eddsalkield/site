@@ -64,13 +64,13 @@ The increase in tempo is made more clear if we look at the duration of each beat
 
 As the rhythm speeds up, so the duration ("time since last beat") decreases - we can see this as the part that's sloping downward.  The tempo increase is quite dramatic: at beat 360, the rhythm is approximately twice as fast as at beat 320.
 
-Then at beat 366, something interesting happens: the beats are happening so quickly that every other beat is falling below the certainty threshold, resulting in a return to a tempo closer to whta we had at the start.  And then it just goes crazy during the heavy drumming section, before returning to normal.
+Then at beat 366, something interesting happens: the beats are happening so quickly that every other beat is falling below the certainty threshold, resulting in a return to a tempo closer to what we had at the start.  And then it just goes crazy during the heavy drumming section, before returning to normal.
 
 So now we know with pretty high certainty where all the beats land in the song.  So we're done on the music front, right?  Not so fast...
 
 ## The beat break
 
-Quite a few songs exhibit the pattern of beat breaks: the drums will be playing a recognisable beat, and then drop out for a bit before rejoining.  Unfortunately, this means our beat detection is going to stop working so reliably.  Although it does a great job overall, in practise it's going to drop at least a few beats.  Ideally we'd like to not have the cat just sitting there awkwardly during instrumentals, so we need a way of guessing what happens during these intervals.
+Quite a few songs exhibit the pattern of beat breaks: the drums will be playing a recognisable beat, and then drop out for a bit before rejoining.  Unfortunately, this means our beat detection is going to stop working so reliably.  Although it does a great job overall, in practice it's going to drop at least a few beats.  Ideally we'd like to not have the cat just sitting there awkwardly during instrumentals, so we need a way of guessing what happens during these intervals.
 
 Let's look at another example:
 
@@ -92,15 +92,15 @@ For each long outlier, we forward fill beats by taking an average of the beat le
 
 The bottom row is the detected beats, and the top row is our interpolated beats.  Nice!
 
-As an aside, it turns out that this same technique is useful when beats happen too quickly as well, such as bass drum rolls (such as at 1:12).  The beats get detected with a lower certainty, and so a long outlier beat duration is detected, and we can forward fill with the average.  Admittedly, I think it's a bit of a shame that the contextually-aware neural net doesn't spit out rapid hits as beats too, because the resulting cat would be hilarious.  But it's a bit too clever for that.
+As an aside, it turns out that this same technique is useful when beats happen too quickly as found in bass drum rolls (for example, at 1:12).  The beats get detected with a lower certainty, and so a long outlier beat duration is detected, and we can forward fill with the average.  Admittedly, I think it's a bit of a shame that the contextually-aware neural net doesn't spit out rapid hits as beats too, because the resulting cat would be hilarious.  But it's a bit too clever for that.
 
 Anyway, we've so far achieved beat detection with forward filling, and it seems from the graphs that the results look promising.  Now to actually make the video...
 
 ## Beat matching the cat
 
-Going back to the source video, you'll note that the timing isn't perfectly consistent.  In fairness, however, it's about as good as you could reasonably expect a cat to be.
+Going back to the source video, you'll note that the timing isn't perfectly consistent.  Not that I'm really complaining; it's about as good as you could reasonably expect a cat to be.  Either way, we're going to need to perform some correction to accommodate for this.
 
-I started from [this video](https://www.youtube.com/watch?v=0Ogenr6hVDY), which had already handily replaced the background with a nice, solid [green](green).  Creating a click track with audacity, edited the video to precisely 120bpm by stretching off-beat sections using [kdenlive](https://kdenlive.org/en/)'s time stretch feature.  This is the resulting video file:
+I started from [this video](https://www.youtube.com/watch?v=0Ogenr6hVDY), which had already handily replaced the background with a nice, solid green.  Creating a click track with audacity, edited the video to precisely 120bpm by stretching off-beat sections using [kdenlive](https://kdenlive.org/en/)'s time stretch feature.  This is the resulting video file:
 
 <video width="480" height="250" controls="controls">
   <source src="/assets/video/blog/vibing_cat/cat.mp4" type="video/mp4">
@@ -124,6 +124,6 @@ I found a cat video funny, so I spent a weekend on this project.  I hope you enj
 
 If you're interested in the code, take a look that the [repository](github.com/eddsalkield/vibing-cat-synchroniser/).  It's built to be generic, so can handle non-vibing-cat overlays too!
 
-[^1]: A friend of mine, upon hearing about this project for the first time
+[^1]: A friend of mine, upon hearing about this project for the first time.
 [^2]: The library: https://github.com/CPJKU/madmom and documentation for the specific function: https://madmom.readthedocs.io/en/latest/modules/features/beats.html
 [^3]: Ideas on how to tell the difference between genuine pauses and beat breaks welcome.
