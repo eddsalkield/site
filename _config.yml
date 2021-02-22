@@ -22,8 +22,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 logo: "assets/images/pixelated_tea.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://edd.salkield.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 locale: "en-GB"
 head_scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js
@@ -33,7 +31,6 @@ author:
   avatar           : "assets/images/pixelated_tea.jpg"
   bio              : "Christian, hacker, tea drinker"
   location         : "Cambridgeshire, UK"
-  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"

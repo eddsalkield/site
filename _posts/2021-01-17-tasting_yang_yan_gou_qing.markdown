@@ -49,7 +49,7 @@ Grown on the Yangyan Mountain in Taizhou province, Yang Yan Gou Qing literally t
 
 {% include gallery layout="half" caption="The tea in both dry and hydrated form" %}
 
-I found, after some experimentation, that this tea is best brewed at a slightly lower temperature than most green teas, at 75°C.  A slightly cooler brew seemed to bring out a certain umami kick reminiscent of the brothy flavour of Japanese gyokuro.  This, alongside other subtle notes of mint and dark caramel would be covered up by bitterness if steeped too long.
+I found, after some experimentation, that this tea is best brewed at a slightly lower temperature than most green teas, at 75°C.  A slightly cooler brew seemed to bring out a certain umami kick reminiscent of the brothy flavour of Japanese gyokuro.  This, alongside other subtle notes of mint and dark caramel, would be covered up by bitterness if steeped for too long.
 
 The aroma was impressive, evolving throughout the brewing process.  The initial scent was sweet and fresh, retreating to reveal dark notes of laquered mahogany, spiced poached pear, and saffron through the latter infusions.  The picking was also of a high standard, with the leaves unfurling to reveal a picking of the bud connected to the top couple of leaves.
 
