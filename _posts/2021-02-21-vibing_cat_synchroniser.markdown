@@ -100,7 +100,7 @@ Anyway, we've so far achieved beat detection with forward filling, and it seems 
 
 Going back to the source video, you'll note that the timing isn't perfectly consistent.  Not that I'm really complaining; it's about as good as you could reasonably expect a cat to be.  Either way, we're going to need to perform some correction to accommodate for this.
 
-I started from [this video](https://www.youtube.com/watch?v=0Ogenr6hVDY), which had already handily replaced the background with a nice, solid green.  Creating a click track with audacity, edited the video to precisely 120bpm by stretching off-beat sections using [kdenlive](https://kdenlive.org/en/)'s time stretch feature.  This is the resulting video file:
+I started from [this video](https://www.youtube.com/watch?v=0Ogenr6hVDY), which had already handily replaced the background with a nice, solid green.  Creating a click track with audacity, I edited the video to precisely 120bpm by stretching off-beat sections using [kdenlive](https://kdenlive.org/en/)'s time stretch feature.  This is the resulting video file:
 
 <video width="480" height="250" controls="controls">
   <source src="/assets/video/blog/vibing_cat/cat.mp4" type="video/mp4">
